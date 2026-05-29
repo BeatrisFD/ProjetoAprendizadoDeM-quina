@@ -1,5 +1,4 @@
 Projeto de detecção de fraude:
-
 API Flask/FastAPI
 Modelo de ML
 MongoDB
