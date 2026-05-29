@@ -1,0 +1,25 @@
+# Ambiente virtual
+venv/
+
+# Cache Python
+__pycache__/
+*.pyc
+
+# Modelo treinado
+models/fraud_model.pkl
+
+# Dataset reconstruído
+data/creditcard.csv
+
+# VSCode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db

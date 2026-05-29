@@ -1,0 +1,15 @@
+pandas
+numpy
+scikit-learn
+xgboost
+fastapi
+uvicorn
+pymongo
+joblib
+python-multipart
+
+# caso de erro para uvicorn: 
+# Bash:
+# source venv/Scripts/activate
+# OU 
+# pip install uvicorn

@@ -3,10 +3,20 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from xgboost import XGBClassifier
 import joblib
+import os
 
+from merge_csv import merge_creditcard_files
 from feature_engineering import process_data
 
-df = pd.read_csv('../data/creditcard.csv')
+csv_path = '../data/creditcard.csv'
+if not os.path.exists(csv_path):
+
+    print('Arquivo principal não encontrado.')
+    print('Reconstruindo dataset...')
+
+    merge_creditcard_files()
+
+df = pd.read_csv(csv_path)
 
 df.columns = df.columns.str.lower()
 
