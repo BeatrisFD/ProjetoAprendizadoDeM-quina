@@ -7,6 +7,9 @@ uvicorn
 pymongo
 joblib
 python-multipart
+imbalanced-learn
+streamlit
+plotly
 
 # caso de erro para uvicorn: 
 # Bash:
