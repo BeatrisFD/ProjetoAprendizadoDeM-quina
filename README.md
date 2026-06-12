@@ -17,3 +17,6 @@ Passos para execução do projeto:
 
     5.Teste no Swagger:
         http://127.0.0.1:8000/docs
+
+    6. Dentro da pasta do projeto: 
+        python -m streamlit run app.py
