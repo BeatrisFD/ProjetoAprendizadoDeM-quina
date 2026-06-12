@@ -3,15 +3,20 @@ import pandas as pd
 
 from feature_engineering import process_data
 
-model = joblib.load('../models/fraud_model.pkl')
 
-def predict_transaction(transaction):
+def predict_transaction(transaction, model_path):
+
+    model = joblib.load(model_path)
 
     df = pd.DataFrame([transaction])
 
     df.columns = df.columns.str.lower()
 
     df = process_data(df)
+
+    expected_columns = model.feature_names_in_
+
+    df = df[expected_columns]
 
     prediction = model.predict(df)[0]
 
